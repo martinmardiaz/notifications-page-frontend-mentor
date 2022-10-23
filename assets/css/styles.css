@@ -1,0 +1,147 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(211, 68%, 94%);
+    box-sizing: inherit;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: hsl(219, 85%, 26%);
+}
+
+a:visited {
+    color: grey;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+    color: grey;
+}
+
+img {
+    max-width: 100%;
+}
+
+.notifications-layout {
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.notifications-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+}
+
+.notifications-text {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: black;
+}
+
+.notifications-quantity {
+    background-color: hsl(219, 85%, 26%);
+    padding: 0.3rem 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.mark-read {
+    text-align: right;
+    cursor: pointer;
+    transition: .25s opacity;
+}
+
+.mark-read:hover {
+    opacity: 0.65;
+}
+
+.notification {
+    background-color: hsl(210, 60%, 98%);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: .5s opacity;
+}
+
+.notification:hover {
+    opacity: 0.8;
+}
+
+a.notification-username {
+    color: black;
+}
+
+a.notification-username:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+.notification-info {
+    display: flex;
+    align-items: center;
+}
+
+.notification-body {
+    display: flex;
+    gap: 2rem;
+}
+
+.notification-body > img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.notification-message {
+    border: 1px solid hsl(219, 14%, 63%);
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    padding: 1.5rem;
+}
+
+.read {
+    opacity: 0.6 !important;
+}
+
+.attribution {
+    font-size: 1.9rem;
+    line-height: 1.6;
+    text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+    .notifications-layout {
+        width: 71rem;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    .notification-info > img {
+        width: 100%;
+    }
+
+    .notifications-info {
+        grid-template-columns: 5fr 1fr;
+    }
+}
